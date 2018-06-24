@@ -22,8 +22,8 @@ open class PKHUDSquareBaseView: UIView {
         super.init(coder: aDecoder)
     }
 
-    public init(image: UIImage? = nil, title: String? = nil, subtitle: String? = nil, frame: CGRect? = nil) {
-        super.init(frame: frame ?? PKHUDSquareBaseView.defaultSquareBaseViewFrame)
+    public init(image: UIImage? = nil, title: String? = nil, subtitle: String? = nil) {
+        super.init(frame: PKHUDSquareBaseView.defaultSquareBaseViewFrame)
         self.imageView.image = image
         titleLabel.text = title
         subtitleLabel.text = subtitle
