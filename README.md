@@ -5,7 +5,7 @@ This is a fork of [Philip Kluz](https://github.com/pkluz)'s `PKHUD`, updated to 
 You can integrate this fork of PKHUD into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "navoshta/PKHUD" ~> 4.0
+git "https://github.com/navoshta/PKHUD.git" "master"
 ```
 
 Run `carthage update` to build the framework and drag the built `PKHUD.framework` into your Xcode project.
