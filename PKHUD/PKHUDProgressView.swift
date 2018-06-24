@@ -14,7 +14,9 @@ import QuartzCore
 open class PKHUDProgressView: PKHUDSquareBaseView, PKHUDAnimating {
 
     public init(title: String? = nil, subtitle: String? = nil) {
-        super.init(image: PKHUDAssets.progressActivityImage, title: title, subtitle: subtitle)
+        let frame = title != nil || subtitle != nil ?
+            CGRect(x: 0, y: 0, width: 156, height: 124) : nil
+        super.init(image: PKHUDAssets.progressActivityImage, title: title, subtitle: subtitle, frame: frame)
     }
 
     public required init?(coder aDecoder: NSCoder) {
